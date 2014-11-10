@@ -25,8 +25,8 @@ module channel(h)
 }
 
 difference() {
-	base(2.5+0.4);
-	translate([0, 0, 0.4]) {
+	base(2.5+0.6);
+	translate([0, 0, 0.6]) {
 		channel(5);
 	}
 }
