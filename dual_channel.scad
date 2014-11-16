@@ -299,24 +299,25 @@ module holes(h)
 }
 
 
+wheight = 3;
 
 difference() {
 	union() {
 		base(0.6);
 		lattice(0.6);
 		
-		outer(4);
-		separator(4);
-		inner(4);
+		outer(wheight);
+		separator(wheight);
+		inner(wheight);
 		
 		translate([0, -43.5, 0]) {
-			eight_inner(4);
-			eight_outer(4);
+			eight_inner(wheight);
+			eight_outer(wheight);
 			eight_base(0.6);
 		}
 	}
 
 	translate([-0.97, -21.9, 0]) {
-		holes(20);
+		holes(wheight * 2);
 	}
 }
