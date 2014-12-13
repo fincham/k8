@@ -15,7 +15,7 @@ M116 ; wait for all temperatures
 G1 Z10 F5000 ; lift nozzle just to clear obstacles
 G28 X0 Y0 F5000; home X and Y
 G28 Z0; home Z to slightly below bed height
-G1 Z1.20 F5000; raise to proper z0 height
+G1 Z1.70 F5000; raise to proper z0 height
 G92 Z0; set Z offset
 
 G1 Z20 F5000 ; lift nozzle for purge
